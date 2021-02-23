@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: #393859;
+            color: white;
+            width: 200px;
+            height: 200px;
+            border-radius: 5%;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseover="entrar()" onmouseout="saiu()"> 
+        <!--resumindo quando eu clicar
+         na div ele vai ativar a função(obs:dps da id tds são eventos)-->
+        Interaja...
+    </div>
+    <script>
+    var a = document.querySelector('div#area')// criando a váriavel pra ser aproveitada nas funções
+    
+    /*Outra forma de criar eventos é dentro dá aba de script
+    a.addEventListener('click', clicar)
+    a.addEventListener('onmouseover', entrar)
+    a.addEventListener('onmouseout', saiu)
+    e depois é so deletar dentro da div
+    */
+        function clicar(){ // a função é mudar o texto dá area 
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar(){
+            a.innerText = 'passou'
+        }
+        function saiu(){
+            a.innerText = 'saiu'
+            a.style.background = '#393859'
+        }
+    </script>
+</body>
+</html>

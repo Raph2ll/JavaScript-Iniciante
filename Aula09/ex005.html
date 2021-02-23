@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background: #2B3040;
+            color: #D94862;
+            font: normal 18pt Arial;
+        }  
+    
+    </style>
+</head>
+<body>
+    <h1>Iniciando com o DOM</h1>
+    <p>Aqui vai o resultado</p> <!--parágrafo-->
+    <P>Aprendendo usar <Strong>DOM</Strong> em java script</P> 
+    <div id="msg" >Clique em mim!!!</div>
+    <script>
+        /* var p1 é para "puchar" o paragráfo "0" 
+        que é o primeiro parágrafo 
+        */
+        var p1 = document.getElementsByTagName(`p`)[0]
+        /* aqui vai escrever via js
+        o texto da p1 que é o texto do parágrafo 1 
+        */
+        write('Está escrito assim: ' + p1.innerText)
+        /* porém se vc usar text o texto vem sem 
+        formatação então recomendo usar o innerHtml 
+        */
+       var d = document.getElementById("msg")
+       write(d.innerHTML)
+       /* "Exemplo usando id usa #"
+       a diferença dos outros é so o nome "div class ="
+       */
+      var q = document.querySelector("div.msg")
+      /*no caso se usa o. quando for  id e # quando é class*/
+
+    </script>
+</body>
+</html>

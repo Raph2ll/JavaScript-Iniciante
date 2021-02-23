@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBGE</title>
+    <style>
+        body {
+            color: #d94862;
+            background-color: #2b3040;
+            font: normal 20px Arial;
+ 
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    <p>Insira os dados:</p>
+    Seu pais de origem<input type="text" name="origp" id="origp">
+    <input type="button" value="Verificar" onclick="testar()"><!--txt = texto-->
+    <div id="res">
+
+    </div>
+    <script>
+        function testar() {
+         var txtp = document.querySelector('input#origp')
+         var res = document.querySelector('div#res')
+         var ori = (txtp.value)
+            res.innerHTML = `Seu país de origem é <strong>${ori}</strong>`
+            if (ori == 'Brasil'){
+                res.innerHTML += `<p>Voce é <strong>Brasileiro</strong></p>`
+            } else {
+                res.innerHTML += `<p>Voce é<strong>ESTRANGEIRO</strong></p>`
+            }
+            res.innerHTML += `<p>Muito obrigado pro participar dessa pesquisa</p>`
+        }
+        
+    </script>
+</body>
+</html>
