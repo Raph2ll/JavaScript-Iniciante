@@ -13,6 +13,7 @@ function verificar() {
         //res.innerHTML = `Idade calculada: ${idade}` //teste aos poucos
         var genero = ''
         var img = document.createElement('img')
+        // essa var cria um elemento no documento principal "html"
         img.setAttribute('id', 'foto')
         if (fsex[0].checked) {
             genero = 'Homen'
