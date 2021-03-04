@@ -17,6 +17,9 @@ section {
     box-shadow: 3px 3px 10px #2121216b;
 
 }
+select#flista {
+    width: 150px;  
+}
 div {
     text-align:left;
     padding: 8px;
